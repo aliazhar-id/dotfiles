@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $1 = "on" ]]; then
+    sudo systemctl start dnscrypt-proxy.service 
+    sudo printf "resolv_conf=/etc/resolv.conf \nname_servers=127.0.0.1" > /etc/resolvconf.conf
+    sudo resolvconf -u
+  elif [[ $1 = "off" ]]; then
+    sudo printf "resolv_conf=/etc/resolv.conf \n#name_servers=127.0.0.1" > /etc/resolvconf.conf
+    sudo systemctl stop dnscrypt-proxy.service
+    sudo resolvconf -u    
+  else
+    printf "Error: Wrong/Missing argument.\n\nUsage: dns [arguments]\nArguments:\n   on:       Turn On DNS service.\n  off:       Turn Off DNS service.\n"
+fi 

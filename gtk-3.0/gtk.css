@@ -1,0 +1,20 @@
+wnck-pager { 
+	background: #666; 
+	color: #bbb;
+	opacity: .75;
+}
+wnck-pager:selected { 
+	background: #eee; 
+	color: cyan; 
+}
+wnck-pager:hover {
+	background-color: #666;
+}
+
+/*#showdesktop-15 image {opacity:0;}
+#showdesktop-15 button {
+background-image:url('/usr/share/icons/WhiteSur/apps/scalable/preferences-desktop-plasma.svg');
+background-size:90%;
+background-position:50% 50%;
+background-repeat:no-repeat;
+}*/

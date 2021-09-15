@@ -3,7 +3,7 @@
 <action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
-	<unique-id>1623301171132576-1</unique-id>
+	<unique-id>1627263808201647-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
@@ -11,32 +11,11 @@
 	<directories/>
 </action>
 <action>
-	<icon>xfsm-lock</icon>
-	<name>Thunar Root Mode</name>
-	<unique-id>1623406724834750-1</unique-id>
-	<command>pkexec thunar %F</command>
-	<description>Open File Manager As Root</description>
-	<patterns>*</patterns>
-	<directories/>
-	<other-files/>
-	<text-files/>
-</action>
-<action>
-	<icon>gtk-preferences</icon>
-	<name>Edit As Root</name>
-	<unique-id>1623408138010431-1</unique-id>
-	<command>pkexec /opt/sublime_text/sublime_text %f</command>
-	<description>Edit file/config or whatever if that text file As Root</description>
-	<patterns>*</patterns>
-	<other-files/>
-	<text-files/>
-</action>
-<action>
-	<icon>sublime-text</icon>
-	<name>Open Folder Sublime Text</name>
-	<unique-id>1623321810313554-1</unique-id>
-	<command>subl -a %f</command>
-	<description></description>
+	<icon>keyring-manager</icon>
+	<name>Open as root</name>
+	<unique-id>1627304772601598-1</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Open folder here as root user</description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
