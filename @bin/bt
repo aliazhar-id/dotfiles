@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [[ $1 = "on" ]]; then
-    sudo systemctl start bluetooth && bluetoothctl power on && bluetoothctl
+    doas systemctl start bluetooth && bluetoothctl power on && bluetoothctl
   elif [[ $1 = "off" ]]; then
-    sudo systemctl stop bluetooth
+    doas systemctl stop bluetooth
   elif [[ $1 = "ctl" ]]; then
-    bluetoothctl    
+    bluetoothctl	  
   else
     printf "Error: Wrong/Missing argument.\n\nUsage: bt [arguments]\nArguments:\n   on:       Turn On bluetooth service and Power.\n  off:       Turn Off bluetooth service and Power.\n  ctl:       bluetoothctl mode.\n"
 fi 
