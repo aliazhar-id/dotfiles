@@ -6,12 +6,12 @@ if [[ $1 = "on" ]];
   elif [[ $1 = "off" ]]; 
   then
     xinput disable 14
-  elif [[ $1 = "tapon" ]]; 
+  elif [[ $1 = "ton" ]]; 
   then
     xinput -set-prop 14 333 1    
-  elif [[ $1 = "tapoff" ]]; 
+  elif [[ $1 = "tof" ]]; 
   then
     xinput -set-prop 14 333 0
   else
-    printf "Error: Wrong/Missing argument.\n\nUsage: tcpd [arguments]\nArguments:\n  on      :       Enable Touchpad.\n  off     :       Disable Touchpad.\n  tap on  :       Enable Touchpad tapping mode.\n  tap off :       Disable Touchpad tapping mode.\n"
+    printf "Error: Wrong/Missing argument.\n\nUsage: tcpd [arguments]\nArguments:\n  on      :       Enable Touchpad.\n  off     :       Disable Touchpad.\n  ton     :       Enable Touchpad tapping mode.\n  tof     :       Disable Touchpad tapping mode.\n"
 fi 
